@@ -101,27 +101,6 @@ public class Barbaro {
 
     }
 
-    public void ataqueBG(Guerreiro guerreiro, Armas arma) {
-        poderFinal = (arma.ataquePoder * this.ataque);
-        dano = poderFinal - guerreiro.defesa;
-
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + guerreiro.nome + " com " + arma.nome + " causando 0 de dano. (Atacante está morto)");
-
-        } else {
-            guerreiro.vida -= dano;
-
-            if (guerreiro.vida <= 0) {
-                guerreiro.vida = 0; // para não negativar a vida
-                System.out.println(this.nome + " atacou " + guerreiro.nome + " com " + arma.nome + " causando " + dano + " de dano e matou o personagem alvo.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + guerreiro.nome + " com " + arma.nome + " causando " + dano + " de dano.");
-            }
-
-        }
-
-    }
 
     public void ataqueBM(Mago mago, Armas arma) {
         poderFinal = (arma.ataquePoder * this.ataque);

@@ -23,38 +23,37 @@ public class Jogo {
 
         //Ataques
 
-        // Aquiles ataca Atila com a Espada
-        Aquiles.ataqueGB("Atila","Espada");
+//        // Aquiles ataca Atila com a Espada
+//        Aquiles.ataqueGB("Atila","Espada");
+//
+//        // Leonidas ataca Kaufa com a Adaga
+//        Leonidas.ataqueGM("Kaufa", "Adaga");
+//
+//        // Atila ataca Aquiles com a Espada
+//        Atila.ataqueBG("Aquiles","Espada");
+//
+//        // Kaufa ataca Leonidas com o Plasma
+//        Kaufa.ataqueMG("Leonidas","Plasma");
+//
+//        // Ravenna ataca Jigorokano com a BolaDeFogo
+//        Ravenna.ataqueFC("Jigorokano","BolaDeFogo");
+//
+//        // Ravenna ataca Merlin com o Plasma
+//        Ravenna.ataqueFD("Merlin","Plasma");
+//
+//        // Draco ataca Leonidas com o Plasma
+//        Draco.ataqueFG("Leonidas","Plasma");
+//
+//        // Merlin ataca Aquiles com o Cajado
+//        Merlin.ataqueDG("Aquiles","Cajado");
+//
+//        // Jigorokano ataca Ravena com o Jutsu
+//        Jigorokano.ataqueCF("Ravenna","Jutsu");
 
-        // Leonidas ataca Kaufa com a Adaga
-        Leonidas.ataqueGM("Kaufa", "Adaga");
-
-        // Atila ataca Aquiles com a Espada
-        Atila.ataqueBG("Aquiles","Espada");
-
-        // Kaufa ataca Leonidas com o Plasma
-        Kaufa.ataqueMG("Leonidas","Plasma");
-
-        // Ravenna ataca Jigorokano com a BolaDeFogo
-        Ravenna.ataqueFC("Jigorokano","BolaDeFogo");
-
-        // Ravenna ataca Merlin com o Plasma
-        Ravenna.ataqueFD("Merlin","Plasma");
-
-        // Draco ataca Leonidas com o Plasma
-        Draco.ataqueFG("Leonidas","Plasma");
-
-        // Merlin ataca Aquiles com o Cajado
-        Merlin.ataqueDG("Aquiles","Cajado");
-
-        // Jigorokano ataca Ravena com o Jutsu
-        Jigorokano.ataqueCF("Ravenna","Jutsu");
-    }
 
         //Resultado final
 
         System.out.println("Resultado Final");
         System.out.println("Guerreiro: " + Aquiles.nome + " Vida: " + Aquiles.vida);
-        sout
     }
 }
