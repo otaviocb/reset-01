@@ -2,32 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58fea1b7-ba40-44c7-a3d3-f97b09dcfdc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java projects.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/reset-01/META-INF/reset-01.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reset-01" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reset-01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculadora.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comparador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercicio3/Aluno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercicio3/App3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Armas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Barbaro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Clerigo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Druida.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Feiticeiro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Guerreiro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Jogo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Magias.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Mago.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/PoderesDivinos.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicio2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicio2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicio2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicio2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicio2/src/exercicio2/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicio2/src/exercicio2/Categoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicio2/src/exercicio2/Livro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicio2/src/exercicio2/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicios-aula-2/src/ENUM/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicios-aula-2/src/ENUM/Compromisso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicios-aula-2/src/ENUM/Cor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicios-aula-2/src/exercicio1/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicios-aula-2/src/exercicio1/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula02/exercicios-aula-2/src/exercicio1/Turma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/reset-01" />
   </component>
   <component name="ProjectId" id="1Z7xWcIEOlDm3LwRLJiylThOZF7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -46,6 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />

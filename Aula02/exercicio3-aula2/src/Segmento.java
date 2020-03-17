@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
 public enum Segmento {
+    ALIMENTACAO,
+    LIMPEZA,
+    HIGIENE;
 }

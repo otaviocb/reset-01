@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fea1b7-ba40-44c7-a3d3-f97b09dcfdc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java projects.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/reset-01/META-INF/reset-01.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reset-01" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reset-01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculadora.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comparador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercicio3/Aluno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercicio3/App3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Armas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Barbaro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Clerigo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Druida.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Feiticeiro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Guerreiro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Jogo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Magias.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/Mago.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemaAula1/PoderesDivinos.java" beforeDir="false" />
-    </list>
+    <list default="true" id="58fea1b7-ba40-44c7-a3d3-f97b09dcfdc1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

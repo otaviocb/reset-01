@@ -1,13 +1,14 @@
-package TemaAula1;
+public class PoderDivino {
 
-public class PoderesDivinos {
+    String nome;
 
-    public String nome;
-    public int ataquePoder, custoFe;
-    public PoderesDivinos(String nome, int ataquePoder, int custoFe) {
+    double poderAtaque;
+
+    double custoFe;
+
+    PoderDivino(String nome, double poderAtaque, double custoFe) {
         this.nome = nome;
-        this.ataquePoder = ataquePoder;
+        this.poderAtaque = poderAtaque;
         this.custoFe = custoFe;
     }
 }
-

@@ -1,146 +1,66 @@
-package TemaAula1;
-
 public class Guerreiro {
-    public String nome;
-    public int vida, ataque, defesa, poderFinal, dano;
-    public Guerreiro(String nome, int vida, int ataque, int defesa) {
+
+    String nome;
+
+    double vida;
+
+    double ataque;
+
+    double defesa;
+
+    Guerreiro(String nome, double vida, double ataque, double defesa) {
         this.nome = nome;
         this.vida = vida;
         this.ataque = ataque;
         this.defesa = defesa;
     }
 
-    public void ataque(Barbaro barbaro, Armas arma) {
-        poderFinal = (arma.ataquePoder * this.ataque);
-        dano = poderFinal - barbaro.defesa;
-
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + barbaro.nome + " com " + arma.nome + " causando 0 de dano. (Atacante está morto)");
-
-        } else {
-            barbaro.vida -= dano;
-
-            if (barbaro.vida <= 0) {
-                barbaro.vida = 0;
-                System.out.println(this.nome + " atacou " + barbaro.nome + " com " + arma.nome + " causando " + dano + " de dano e matou o personagem alvo.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + barbaro.nome + " com " + arma.nome + " causando " + dano + " de dano.");
-
-            }
-
-        }
-
+    double calcularDano(double defesa, double poder) {
+        return ataque * poder - defesa;
     }
 
-    public void ataque(Clerigo clerigo, Armas arma) {
-        poderFinal = (arma.ataquePoder * this.ataque);
-        dano = poderFinal - clerigo.defesa;
-
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + clerigo.nome + " com " + arma.nome + " causando 0 de dano. (Atacante está morto)");
-
-        } else {
-            clerigo.vida -= dano;
-
-            if (clerigo.vida <= 0) {
-                clerigo.vida = 0;
-                System.out.println(this.nome + " atacou " + clerigo.nome + " com " + arma.nome + " causando " + dano + " de dano e matou o personagem alvo.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + clerigo.nome + " com " + arma.nome + " causando " + dano + " de dano.");
-            }
-
-        }
-
+    void registrar(String alvo, String habilidade, double dano) {
+        System.out.println(this.nome + " atacou " + alvo + " com " + habilidade + " causando " + dano + " de dano.");
     }
 
-    public void ataqueGD(Druida druida, Armas arma) {
-        poderFinal = (arma.ataquePoder * this.ataque);
-        dano = poderFinal - druida.defesa;
+    void imprimirEstado() {
+        System.out.println("Nome: " + this.nome + " | Vida: " + this.vida);
+    }
+/*
+    void atacar(Guerreiro alvo, Arma arma) {
+        double dano = calcularDano(alvo.defesa, arma.poderAtaque);
+        alvo.vida -= dano;
+        registrar(alvo.nome, arma.nome, dano);
+    }
+*/
 
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + druida.nome + " com " + arma.nome + " causando 0 de dano. (Atacante está morto)");
-
-        } else {
-            druida.vida -= dano;
-
-            if (druida.vida <= 0) {
-                druida.vida = 0;
-                System.out.println(this.nome + " atacou " + druida.nome + " com " + arma.nome + " causando " + dano + " de dano e matou o personagem alvo.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + druida.nome + " com " + arma.nome + " causando " + dano + " de dano.");
-
-            }
-
-        }
-
+    void atacar (Barbaro alvo, Arma arma){
+        double dano = calcularDano(alvo.defesa, arma.poderAtaque);
+        alvo.vida -= dano;
+        registrar(alvo.nome, arma.nome, dano);
     }
 
-    public void ataqueGF(Feiticeiro feiticeiro, Armas arma) {
-        poderFinal = (arma.ataquePoder * this.ataque);
-        dano = poderFinal - feiticeiro.defesa;
-
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + feiticeiro.nome + " com " + arma.nome + " causando 0 de dano. (Atacante está morto)");
-
-        } else {
-            feiticeiro.vida -= dano;
-
-            if (feiticeiro.vida <= 0) {
-                feiticeiro.vida = 0;
-                System.out.println(this.nome + " atacou " + feiticeiro.nome + " com " + arma.nome + " causando " + dano + " de dano e matou o personagem alvo.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + feiticeiro.nome + " com " + arma.nome + " causando " + dano + " de dano.");
-
-            }
-
-        }
-
-    }
-    public void ataqueGB(Barbaro barbaro, Armas arma) {
-        poderFinal = (arma.ataquePoder * this.ataque);
-        dano = poderFinal - barbaro.defesa;
-
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + barbaro.nome + " com " + arma.nome + " causando 0 de dano, pois o tacante está morto.");
-
-        } else {
-            barbaro.vida -= dano;
-
-            if (barbaro.vida <= 0) {
-                barbaro.vida = 0;
-                System.out.println(this.nome + " atacou " + barbaro.nome + " com " + arma.nome + " causando " + dano + " de dano e matou o personagem atacado.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + barbaro.nome + " com " + arma.nome + " causando " + dano + " de dano.");
-            }
-
-        }
-
-    }
-    public void ataqueGM(Mago mago, Armas arma) {
-        poderFinal = (arma.ataquePoder * this.ataque);
-        dano = poderFinal - mago.defesa;
-
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + mago.nome + " com " + arma.nome + " causando 0 de dano. (Atacante está morto)");
-
-        } else {
-            mago.vida -= dano;
-
-            if (mago.vida <= 0) {
-                mago.vida = 0; // para não negativar a vida
-                System.out.println(this.nome + " atacou " + mago.nome + " com " + arma.nome + " causando " + dano + " de dano e matou o personagem alvo.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + mago.nome + " com " + arma.nome + " causando " + dano + " de dano.");
-            }
-
-        }
-
+    void atacar (Mago alvo, Arma arma){
+        double dano = calcularDano(alvo.defesa, arma.poderAtaque);
+        alvo.vida -= dano;
+        registrar(alvo.nome, arma.nome, dano);
     }
 
+    void atacar (Feiticeiro alvo, Arma arma){
+        double dano = calcularDano(alvo.defesa, arma.poderAtaque);
+        alvo.vida -= dano;
+        registrar(alvo.nome, arma.nome, dano);
+    }
+
+    void atacar (Clerigo alvo, Arma arma){
+        double dano = calcularDano(alvo.defesa, arma.poderAtaque);
+        alvo.vida -= dano;
+        registrar(alvo.nome, arma.nome, dano);
+    }
+
+    void atacar (Druida alvo, Arma arma){
+        double dano = calcularDano(alvo.defesa, arma.poderAtaque);
+        alvo.vida -= dano;
+        registrar(alvo.nome, arma.nome, dano);
+    }
 }

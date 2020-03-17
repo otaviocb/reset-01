@@ -1,10 +1,16 @@
-package TemaAula1;
-
 public class Clerigo {
-    public String nome;
-    public int vida, ataque, defesa, fe, dano, poderFinal;
 
-    public Clerigo(String nome, int vida, int ataque, int defesa, int fe) {
+    String nome;
+
+    double vida;
+
+    double ataque;
+
+    double defesa;
+
+    int fe;
+
+    Clerigo(String nome, double vida, double ataque, double defesa, int fe) {
         this.nome = nome;
         this.vida = vida;
         this.ataque = ataque;
@@ -12,75 +18,78 @@ public class Clerigo {
         this.fe = fe;
     }
 
-    public void ataqueCB(Barbaro barbaro, PoderesDivinos poder) {
-        poderFinal = (poder.ataquePoder * this.ataque);
-        dano = poderFinal - barbaro.defesa;
-
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + barbaro.nome + " com " + poder.nome + " causando 0 de dano. (Atacante está morto)");
-
-        } else if (poder.custoFe > this.fe) {
-            System.out.println(this.nome + " atacou " + barbaro.nome + " com " + poder.nome + " causando 0 de dano. (Atacante está sem fé)");
-
-        } else {
-            this.fe -= poder.custoFe;
-            barbaro.vida -= dano;
-
-            if (barbaro.vida <= 0) {
-                barbaro.vida = 0; //para não negativar a vida
-                System.out.println(this.nome + " atacou " + barbaro.nome + " com " + poder.nome + " causando " + dano + " de dano e matou o personagem alvo.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + barbaro.nome + " com " + poder.nome + " causando " + dano + " de dano.");
-            }
-
-        }
-
+    double calcularDano(double defesa, double poder) {
+        return ataque * poder - defesa;
     }
-    public void ataqueCF(Feiticeiro feiticeiro, PoderesDivinos poder) {
-        poderFinal = (poder.ataquePoder * this.ataque);
-        dano = poderFinal - feiticeiro.defesa;
 
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + feiticeiro.nome + " com " + poder.nome + " causando 0 de dano. (Atacante está morto)");
-
-        } else if (poder.custoFe > this.fe) {
-            System.out.println(this.nome + " atacou " + feiticeiro.nome + " com " + poder.nome + " causando 0 de dano. (Atacante está sem fé)");
-
-        } else {
-            this.fe -= poder.custoFe;
-            feiticeiro.vida -= dano;
-
-            if (feiticeiro.vida <= 0) {
-                feiticeiro.vida = 0; //para não negativar a vida
-                System.out.println(this.nome + " atacou " + feiticeiro.nome + " com " + poder.nome + " causando " + dano + " de dano e matou o personagem alvo.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + feiticeiro.nome + " com " + poder.nome + " causando " + dano + " de dano.");
-            }
-
-        }
-
+    void registrar(String alvo, String habilidade, double dano) {
+        System.out.println(this.nome + " atacou " + alvo + " com " + habilidade + " causando " + dano + " de dano.");
     }
-    public void ataqueCG(Guerreiro guerreiro, Armas arma) {
-        poderFinal = (arma.ataquePoder * this.ataque);
-        dano = poderFinal - guerreiro.defesa;
 
-        if (this.vida <= 0) {
-            System.out.println(this.nome + " atacou " + guerreiro.nome + " com " + arma.nome + " causando 0 de dano, pois o tacante está morto.");
-
-        } else {
-            guerreiro.vida -= dano;
-
-            if (guerreiro.vida <= 0) {
-                guerreiro.vida = 0;
-                System.out.println(this.nome + " atacou " + guerreiro.nome + " com " + arma.nome + " causando " + dano + " de dano e matou o personagem atacado.");
-
-            } else {
-                System.out.println(this.nome + " atacou " + guerreiro.nome + " com " + arma.nome + " causando " + dano + " de dano.");
-            }
-
-        }
-
+    void imprimirEstado() {
+        System.out.println("Nome: " + this.nome + " | Vida: " + this.vida + " | Fé: " + this.fe);
     }
+
+    void atacar(Guerreiro alvo, PoderDivino poderDivino) {
+        if (fe>poderDivino.custoFe) {
+            double dano = calcularDano(alvo.defesa, poderDivino.poderAtaque);
+            alvo.vida -= dano;
+            this.fe -= poderDivino.custoFe;
+            registrar(alvo.nome, poderDivino.nome, dano);
+        }else{
+            System.out.println(this.nome + " tem fé de:" + this.fe + ", não sendo possível atacar!");
+        }
+    }
+
+    void atacar(Barbaro alvo, PoderDivino poderDivino) {
+        if (fe>poderDivino.custoFe) {
+            double dano = calcularDano(alvo.defesa, poderDivino.poderAtaque);
+            alvo.vida -= dano;
+            this.fe -= poderDivino.custoFe;
+            registrar(alvo.nome, poderDivino.nome, dano);
+        }else{
+            System.out.println(this.nome + " tem fé de:" + this.fe + ", não sendo possível atacar!");
+        }
+    }
+
+    void atacar(Mago alvo, PoderDivino poderDivino) {
+        if (fe>poderDivino.custoFe) {
+            double dano = calcularDano(alvo.defesa, poderDivino.poderAtaque);
+            alvo.vida -= dano;
+            this.fe -= poderDivino.custoFe;
+            registrar(alvo.nome, poderDivino.nome, dano);
+        }else{
+            System.out.println(this.nome + " tem fé de:" + this.fe + ", não sendo possível atacar!");
+        }
+    }
+
+    void atacar(Feiticeiro alvo, PoderDivino poderDivino) {
+        if (fe>poderDivino.custoFe) {
+            double dano = calcularDano(alvo.defesa, poderDivino.poderAtaque);
+            alvo.vida -= dano;
+            this.fe -= poderDivino.custoFe;
+            registrar(alvo.nome, poderDivino.nome, dano);
+        }else{
+            System.out.println(this.nome + " tem fé de:" + this.fe + ", não sendo possível atacar!");
+        }
+    }
+    /*
+        void atacar(Clerigo alvo, PoderDivino poderDivino) {
+            double dano = calcularDano(alvo.defesa, poderDivino.poderAtaque);
+            alvo.vida -= dano;
+            this.fe -= poderDivino.custoFe;
+            registrar(alvo.nome, poderDivino.nome, dano);
+        }
+    */
+    void atacar(Druida alvo, PoderDivino poderDivino) {
+        if (fe>poderDivino.custoFe) {
+            double dano = calcularDano(alvo.defesa, poderDivino.poderAtaque);
+            alvo.vida -= dano;
+            this.fe -= poderDivino.custoFe;
+            registrar(alvo.nome, poderDivino.nome, dano);
+        }else{
+            System.out.println(this.nome + " tem fé de:" + this.fe + ", não sendo possível atacar!");
+        }
+    }
+
 }
